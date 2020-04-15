@@ -1,6 +1,8 @@
 """
 Scan reads every item in the table and returns all the data.
 Filter the data with an optional FilterExpression.
+
+DynamoDB paginates the results into pages that are 1 MB in size (or less).
 """
 from __future__ import print_function  # Python 2/3 compatibility
 import boto3
